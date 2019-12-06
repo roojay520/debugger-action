@@ -1,7 +1,9 @@
 name: ssh ubuntu
+
 on:
-  watch:
-    types: [started]
+  push:
+    branches:
+      - master
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
